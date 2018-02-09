@@ -1,0 +1,51 @@
+/* product tabs */
+// Supply Theme Colors
+$colorPrimary: #989a76;
+
+.tabs-content__placeholder {
+  display: none;
+}
+
+.tabs {
+  display: block;
+  floaT: left;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid $colorPrimary;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  list-style: none;
+}
+
+.tabs-button {
+  float: left;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
+  border-top: 1px solid lightgrey;
+  padding: 10px 20px;
+  border-radius: 3px 3px 0 0;
+  margin-right: 2px;
+  margin-bottom: 0;
+  cursor: pointer;
+
+
+&.active {
+  background: $colorPrimary;
+  border-left: 1px solid $colorPrimary;
+  border-right: 1px solid $colorPrimary;
+  border-top: 1px solid $colorPrimary;
+  color: #ffffff;
+  font-weight: bold;
+}
+}
+
+.tabs-content {
+  display: none;
+  width:100%;
+  clear: both;
+
+
+&.active {
+  display: block;
+}
+}
